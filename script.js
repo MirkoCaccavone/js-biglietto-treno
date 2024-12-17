@@ -10,10 +10,11 @@
 // INPUT
 // indicare il numero di km da percorrere
 let distanzaViaggio = parseInt(prompt("inserisci numero di km"));
+
 // indicare l'età
 let etaUtente = parseInt(prompt("inserisci la tua età"));
 
-console.log(distanzaViaggio, etaUtente);
+console.log("km",distanzaViaggio , "età",etaUtente);
 
 
 // FUNZIONE
@@ -28,7 +29,7 @@ let sconto;
 if (etaUtente < 18){
     sconto = (prezzoIntero / 100) * 20;
 
-} else if (etaUtente > 65){
+} else if (etaUtente >= 65){
     sconto = (prezzoIntero / 100) * 40;
 
 }else{
@@ -43,4 +44,4 @@ let prezzoFinale = prezzoIntero - sconto;
 
 // OUTPUT
 // messaggio con prezzo finale
-console.log("il prezzo finale è di: ", prezzoFinale.toFixed(2));
+console.log("il prezzo finale è di: €",parseInt(prezzoFinale.toFixed(2)));
