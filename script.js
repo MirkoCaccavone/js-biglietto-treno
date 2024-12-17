@@ -9,12 +9,16 @@
 
 // INPUT
 // indicare il numero di km da percorrere
+let distanzaViaggio = parseInt(prompt("inserisci numero di km"));
 // indicare l'età
+let etaUtente = parseInt(prompt("inserisci la tua età"));
+
+console.log(distanzaViaggio, etaUtente);
+
 
 // FUNZIONE
 // calcolare il prezzo del biglietto in base ai km
-// calcolare lo sconto
-// applicare lo sconto (quando serve) al prezzo del biglitto
 
-// OUTPUT
-// messaggio con prezzo finale
+
+
+
