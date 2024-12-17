@@ -5,3 +5,16 @@
 // - va applicato uno sconto del 40% per gli over 65.
 // - L’output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). 
 // Questo richiederà un minimo di ricerca.
+
+
+// INPUT
+// indicare il numero di km da percorrere
+// indicare l'età
+
+// FUNZIONE
+// calcolare il prezzo del biglietto in base ai km
+// calcolare lo sconto
+// applicare lo sconto (quando serve) al prezzo del biglitto
+
+// OUTPUT
+// messaggio con prezzo finale
