@@ -18,7 +18,23 @@ console.log(distanzaViaggio, etaUtente);
 
 // FUNZIONE
 // calcolare il prezzo del biglietto in base ai km
+let prezzoIntero = distanzaViaggio * 0.21;
+console.log("Il prezzo del biglietto senza sconto è: ", prezzoIntero);
 
+let sconto;
 
+// calcolare lo sconto
+
+if (etaUtente < 18){
+    sconto = (prezzoIntero / 100) * 20;
+
+} else if (etaUtente > 65){
+    sconto = (prezzoIntero / 100) * 40;
+
+}else{
+    sconto = (0);
+}
+
+console.log("lo sconto è di: ", sconto.toFixed(2));
 
 
