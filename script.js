@@ -35,7 +35,7 @@ if (etaUtente < 18){
     sconto = (0);
 }
 
-console.log("lo sconto è di: ", sconto.toFixed(2));
+console.log("lo sconto è di: ", sconto);
 
 // applicare lo sconto (quando serve) al prezzo del biglitto
 
@@ -43,4 +43,4 @@ let prezzoFinale = prezzoIntero - sconto;
 
 // OUTPUT
 // messaggio con prezzo finale
-console.log("il prezzo finale è di: ", prezzoFinale);
+console.log("il prezzo finale è di: ", prezzoFinale.toFixed(2));
