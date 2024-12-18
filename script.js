@@ -13,35 +13,25 @@ let distanzaViaggio = parseInt(prompt("inserisci numero di km"));
 
 // indicare l'età
 let etaUtente = parseInt(prompt("inserisci la tua età"));
-
 console.log("km",distanzaViaggio , "età",etaUtente);
-
 
 // FUNZIONE
 // calcolare il prezzo del biglietto in base ai km
 let prezzoIntero = distanzaViaggio * 0.21;
 console.log("Il prezzo del biglietto senza sconto è: ", prezzoIntero);
 
-let sconto;
-
 // calcolare lo sconto
 
 if (etaUtente < 18){
-    sconto = (prezzoIntero / 100) * 20;
+    prezzoIntero = prezzoIntero * 0.80;
 
 } else if (etaUtente >= 65){
-    sconto = (prezzoIntero / 100) * 40;
+    prezzoIntero = prezzoIntero * 0.60;
 
 }else{
-    sconto = (0);
+    prezzoIntero
 }
-
-console.log("lo sconto è di: ", sconto);
-
-// applicare lo sconto (quando serve) al prezzo del biglitto
-
-let prezzoFinale = prezzoIntero - sconto;
 
 // OUTPUT
 // messaggio con prezzo finale
-console.log("il prezzo finale è di: €",parseInt(prezzoFinale.toFixed(2)));
+console.log("il prezzo finale è di: ", prezzoIntero.toFixed(2));
